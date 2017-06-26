@@ -1,0 +1,1 @@
+package entity;import javax.persistence.Entity;@Entitypublic class FixedPricePraxis extends Praxis{}
