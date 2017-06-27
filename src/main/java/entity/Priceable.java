@@ -3,15 +3,16 @@ package entity;
 import javax.persistence.*;
 
 /**
-
+Se lo combirtió a clase luego de descubrir que
 no es soportado por JPA una interfaz como entity. no sirve el enfoque. 
-Se lo combirtió a clase
+
  */
 @Entity
 public class Priceable {
  
  @Id
  @GeneratedValue
+ @Column(name="ID")
  private long id;
  
  @Column
