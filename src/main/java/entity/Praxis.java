@@ -1,12 +1,14 @@
 package entity;
 
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 
-@MappedSuperclass
-public abstract class Praxis{
+/*esta clase representaria una practica, con un valor fijo*/
+
+@Entity
+public class Praxis extends Priceable{
 	
 	@Id
 	@GeneratedValue
