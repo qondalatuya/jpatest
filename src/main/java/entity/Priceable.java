@@ -1,6 +1,7 @@
 package entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
 Se lo combirtió a clase luego de descubrir que
@@ -8,7 +9,7 @@ no es soportado por JPA una interfaz como entity. no sirve el enfoque.
 
  */
 @Entity
-public class Priceable {
+public class Priceable implements Serializable{
  
  @Id
  @GeneratedValue
